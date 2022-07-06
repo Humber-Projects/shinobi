@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Burford';
+    src: url(fonts/Burford_Base.otf);
+}
+
+#canvas{
+    position: absolute;
+    z-index: 1;
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+#introscreen {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#startbutton {
+    position: absolute;
+    background: rgb(182, 155, 120);
+    color: rgb(58, 58, 58);
+    font-family: 'Burford';
+    bottom: 20%;
+    right: 45%;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px black;
+}
+
+#startbutton:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#losegame {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+}
+
+#retry {
+    background: rgb(182, 155, 120);
+    position: fixed;
+    width: 200px;
+    height: 50px;
+    color: rgb(58, 58, 58);
+    font-family: 'Burford';
+    font-size: 30px;
+    display: none;
+    right: 45%;
+    bottom: 20%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px black;
+}
+
+#retry:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#wingame {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+}
+
+#hitscreen {
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(129, 14, 14);
+    opacity: 50%;
+}
+
+#hitscreen-inner {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 30%;
+    background: radial-gradient(circle, rgba(255,255,255, 0.5) 10%, rgba(252,70,107,0) 100%);
+    opacity: 50%;
+}
